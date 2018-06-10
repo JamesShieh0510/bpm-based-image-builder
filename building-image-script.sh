@@ -24,6 +24,11 @@ docker tag autolab/bpm:$version $IMAGE_REPOSITORY_USER/$IMAGE_NAME
 docker images autolab/*
 docker push $IMAGE_REPOSITORY_USER/$IMAGE_NAME
 
+#image repository:https://hub.docker.com/r/autolab/bpm/
+#
+#docker pull autolab/bpm
+
+
 #執行container化的bpm
 docker run -p 8089:8054 autolab/bpm:$version
 #. ./building--image-script.sh
